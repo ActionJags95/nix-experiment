@@ -117,8 +117,8 @@ type = "nix-shell"
 style = "diamond"
 leading_diamond = ""
 foreground = "p:base"
-background = "p:blue"
-template = "(󱄅-{{ .Type }})"
+background = "p:sapphire"
+template = "󱄅-{{ .Type }}"
 
 ## Node
 [[blocks.segments]]
