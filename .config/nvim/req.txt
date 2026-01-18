@@ -1,0 +1,2 @@
+1. Make a workaround for npm and python3.10 without breaking the server
+2. Look for linting and debugging
