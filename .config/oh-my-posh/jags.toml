@@ -118,7 +118,7 @@ style = "diamond"
 leading_diamond = ""
 foreground = "p:base"
 background = "p:sapphire"
-template = "󱄅-{{ .Type }} "
+template = " 󱄅-{{ .Type }} "
 
 ## Node
 [[blocks.segments]]
