@@ -13,10 +13,7 @@
 
       devShells.${system}.default = pkgs.mkShell {
         packages = [
-          pkgs.zsh-nix-shell
-          pkgs.zsh-completions
-          pkgs.zsh-autosuggestions
-          pkgs.zsh-syntax-highlighting
+          pkgs.zsh
           pkgs.tmux
           pkgs.neovim
           pkgs.lazygit
@@ -47,10 +44,9 @@
           export XDG_CONFIG_HOME=$PWD/.config
           export XDG_DATA_HOME=$PWD/.local/share
           export XDG_STATE_HOME=$PWD/.local/state
-          export XDG_CACHE_HOME=$PWD/.cache
+          export XDG_CACHE_HOME=$PWD/.cache 
 
-          eval "$(oh-my-posh init zsh --config $PWD/.config/oh-my-posh/jags.toml)"
-          eval "$(zoxide init zsh)"
+          export ZDOTDIR=$PWD/.config/zsh
 
           echo ">> Entered isolated dev environment"
         '';
