@@ -111,6 +111,15 @@ style = "round"
 threshold = 500
 
 # Programming languages
+## Nix shell
+[[blocks.segments]]
+type = "nix-shell"
+style = "diamond"
+leading_diamond = ""
+foreground = "p:base"
+background = "p:blue"
+template = "(󱄅-{{ .Type }})"
+
 ## Node
 [[blocks.segments]]
 type = "node"
